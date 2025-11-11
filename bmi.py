@@ -1,8 +1,9 @@
 import sys
 if len(sys.argv) == 3:
   script_name = sys.argv[0]
-  weight = sys.argv[1]
-  height = sys.argv[2]
+  weight = float(sys.argv[1])
+  height = float(sys.argv[2])
+  bmi = weight / (height * height)
   print("user provided input values:")
   print("script name:", script_name)
   print("weight:", weight)
