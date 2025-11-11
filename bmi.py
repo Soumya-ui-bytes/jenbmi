@@ -7,7 +7,7 @@ if len(sys.argv) == 3:
   print("script name:", script_name)
   print("weight:", weight)
   print("height:", height)
-  bmi = weight / (height ** 2)
+  bmi = weight / (height * height)
   print("bmi:",bmi)
 else:
   script_name = sys.argv[0]
@@ -17,5 +17,5 @@ else:
   print("script name:", script_name)
   print("weight:", weight)
   print("height:", height)
-  bmi = weight / (height ** 2)
+  bmi = weight / (height * height)
   print("bmi:",bmi)
